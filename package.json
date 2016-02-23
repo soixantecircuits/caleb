@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/soixantecircuits/caleb/issues"
   },
-  "homepage": "https://github.com/soixantecircuits/caleb#readme"
+  "homepage": "https://github.com/soixantecircuits/caleb#readme",
+  "dependencies": {
+    "gm": "^1.21.1"
+  }
 }

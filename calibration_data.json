@@ -1,0 +1,32 @@
+{
+    "computed_transforms": [
+        {
+            "offsetX": -57,
+            "offsetY": -52,
+            "angle": -1.0450551509857178,
+            "scale": 1.0,
+            "cropWidth": 1760,
+            "cropHeight": 1142
+        },
+        {
+            "offsetX": -10,
+            "offsetY": -38,
+            "angle": -0.4234312176704407,
+            "scale": 1.0403022766113282,
+            "cropWidth": 1920,
+            "cropHeight": 1245
+        },
+        {
+            "offsetX": 26,
+            "offsetY": -48,
+            "angle": 0.035186052322387698,
+            "scale": 1.0273631811141968,
+            "cropWidth": 1920,
+            "cropHeight": 1221
+        }
+    ],
+    "global_parameters": {
+        "min_crop_width": 1760,
+        "min_crop_height": 1142
+    }
+}
