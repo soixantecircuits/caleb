@@ -3,18 +3,15 @@ var fs = require('fs')
 
 console.log('Caleb is gonna transform your images')
 
-// Get calibration data
-var calibData = JSON.parse(fs.readFileSync('calibration_data.json', 'utf8'))
-
-function calibrateImg (img, size, calib) {
-	var imgCalib = calib.computed_transforms[1]
+function calibrateImg (img, size, calib, index) {
+	var imgCalib = calib.computed_transforms[index]
 	img
 	.rotate('#000000', -imgCalib.angle)
 	.gravity('Center')
-	.scale(size.width * imgCalib.scale, size.height * imgCalib.scale)
+	.scale((imgCalib.scale*100)+'%', (imgCalib.scale*100)+'%')
 	.crop(imgCalib.cropWidth, imgCalib.cropHeight, -imgCalib.offsetX, -imgCalib.offsetY)
 	.crop(calib.global_parameters.min_crop_width, calib.global_parameters.min_crop_height, 0, 0)
-	.write('./aligned/img_aligned2.jpg', function (err) {
+	.write('./aligned/aligned_'+index+'.jpg', function (err) {
 	  if (err) {
 	    console.log(err)
 	    return
@@ -24,12 +21,17 @@ function calibrateImg (img, size, calib) {
 }
 
 
-var img = gm('./source_img/2.jpg')
-var imgSize = img.size(function (err, value) {
-	if (err) {
-		console.log(err)
-		return
-	}
-	calibrateImg(img, value, calibData)
-})
+// Get calibration data
+var calibData = JSON.parse(fs.readFileSync('calibration_data.json', 'utf8'))
+var imgPaths = fs.readdirSync('./source_img')
 
+for (var i = 0; i < imgPaths.length; i++) {
+	var img = gm('./source_img/'+imgPaths[i])
+	var imgSize = img.size(function (err, value) {
+		if (err) {
+			console.log(err)
+			return
+		}
+		calibrateImg(this.img, value, calibData, this.index)
+	}.bind({img: img, index: i}))
+}
