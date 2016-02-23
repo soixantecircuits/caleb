@@ -1,0 +1,27 @@
+{
+  "name": "caleb",
+  "version": "0.0.1",
+  "description": "Transform images with calibration file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soixantecircuits/caleb.git"
+  },
+  "keywords": [
+    "image",
+    "gm",
+    "node",
+    "transform",
+    "calibration"
+  ],
+  "author": "Art2B",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soixantecircuits/caleb/issues"
+  },
+  "homepage": "https://github.com/soixantecircuits/caleb#readme"
+}
