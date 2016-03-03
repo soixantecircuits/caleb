@@ -1,6 +1,6 @@
 var gm = require('gm')
 var fs = require('fs')
-var pathDir = './source_img'
+var pathDir = './calib'
 
 console.log('Caleb is gonna transform your images')
 
