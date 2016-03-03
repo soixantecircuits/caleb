@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/soixantecircuits/caleb#readme",
   "dependencies": {
-    "gm": "^1.21.1"
+    "gm": "^1.21.1",
+    "imagemagick": "^0.1.3"
   }
 }

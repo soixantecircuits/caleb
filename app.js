@@ -1,5 +1,6 @@
 var gm = require('gm')
 var fs = require('fs')
+var pathDir = './source_img'
 
 console.log('Caleb is gonna transform your images')
 
@@ -23,7 +24,7 @@ function calibrateImg (img, size, calib, index) {
 
 // Get calibration data
 var calibData = JSON.parse(fs.readFileSync('calibration_data.json', 'utf8'))
-var imgPaths = fs.readdirSync('./source_img')
+var imgPaths = fs.readdirSync(pathDir)
 
 for (var i = 0; i < imgPaths.length; i++) {
 	var img = gm('./source_img/'+imgPaths[i])
