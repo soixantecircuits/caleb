@@ -3,3 +3,5 @@ node_modules
 
 # transformed images
 aligned
+source_img
+calibration_data.json

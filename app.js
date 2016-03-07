@@ -5,13 +5,14 @@ console.log('Caleb is gonna transform your images')
 
 function calibrateImg (img, size, calib, index) {
 	var imgCalib = calib.computed_transforms[index]
+	var imgName = (String(index).length < 2) ? '0'+ index : index
 	img
 	.rotate('#000000', -imgCalib.angle)
 	.gravity('Center')
 	.scale((imgCalib.scale*100)+'%', (imgCalib.scale*100)+'%')
 	.crop(imgCalib.cropWidth, imgCalib.cropHeight, -imgCalib.offsetX, -imgCalib.offsetY)
 	.crop(calib.global_parameters.min_crop_width, calib.global_parameters.min_crop_height, 0, 0)
-	.write('./aligned/aligned_'+index+'.jpg', function (err) {
+	.write('./aligned/aligned_'+imgName+'.jpg', function (err) {
 	  if (err) {
 	    console.log(err)
 	    return
