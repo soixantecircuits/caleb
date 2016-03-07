@@ -27,6 +27,16 @@ function calibrateImg (img, size, calib, index) {
 	})
 }
 
+// Setup 
+try {
+	fs.mkdirSync('./aligned')
+	console.log('Creating aligned folder')
+} catch(e) {}
+try {
+	fs.mkdirSync('./source_img')
+	console.log('Creating source_img folder')
+} catch(e) {}
+
 
 // Get calibration data
 var calibData = JSON.parse(fs.readFileSync('calibration_data.json', 'utf8'))
