@@ -16,8 +16,9 @@ function calibrateImg (img, size, calib, index) {
 	.rotate('#000000', -imgCalib.angle)
 	.gravity('Center')
 	.scale((imgCalib.scale*100)+'%', (imgCalib.scale*100)+'%')
-	.crop(imgCalib.cropWidth, imgCalib.cropHeight, -imgCalib.offsetX, -imgCalib.offsetY)
-	.crop(finalCropSize.width, finalCropSize.height, 0, 0)
+	// .crop(imgCalib.cropWidth, imgCalib.cropHeight, -imgCalib.offsetX, -imgCalib.offsetY)
+	// .crop(finalCropSize.width, finalCropSize.height, 0, 0)
+	.crop(finalCropSize.width, finalCropSize.height, -imgCalib.offsetX, -imgCalib.offsetY)
 	.write('./aligned/aligned_'+imgName+'.jpg', function (err) {
 	  if (err) {
 	    console.log(err)
