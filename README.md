@@ -2,6 +2,12 @@
 
 Transform images with calibration file
 
-1. Put your images inside a `source_img` folder
-2. Create a `aligned` folder which will contain your aligned images.
-3. Create a `calibration_data.json` file with your calibration data (#CaptainObvious)
+# Installation
+
+* `npm install`
+
+# How to run
+
+1. Put all your images you wanna transform inside a `source_img` folder
+2. Write all your calibration data inside a `calibation_data.json` file.
+3. Run with `node app.js`
