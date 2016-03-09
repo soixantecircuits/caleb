@@ -14,6 +14,7 @@ function sign (x) {
 
 function calibrateImg(img, size, calib, index) {
   var imgCalib = calib.computed_transforms[index]
+  console.log('Pour index: ' + index + ', voici le truc: ', imgCalib)
   var imgName = (String(index).length < 2) ? '0'+ index : index
 
   im.convert([
