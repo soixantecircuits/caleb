@@ -42,8 +42,12 @@ function calibrateImg(imgPath, size, calibData, index) {
       var horCenterSecondCrop = (image.bitmap.width - calibData.global_parameters.min_crop_width) / 2
       var vertCenterSecondCrop = (image.bitmap.height - calibData.global_parameters.min_crop_height) / 2
 
+      var finalSize = {}
+      finalSize.height = (calibData.global_parameters.min_crop_height % 2 === 0) ? calibData.global_parameters.min_crop_height : (calibData.global_parameters.min_crop_height + 1) 
+      finalSize.width = (calibData.global_parameters.min_crop_width % 2 === 0) ? calibData.global_parameters.min_crop_width : (calibData.global_parameters.min_crop_width + 1) 
+
       image
-      .crop(horCenterSecondCrop, vertCenterSecondCrop, calibData.global_parameters.min_crop_width, calibData.global_parameters.min_crop_height)
+      .crop(horCenterSecondCrop, vertCenterSecondCrop, finalSize.width, finalSize.height)
       .quality(100)
       .write(imgPath)
     })
