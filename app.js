@@ -1,44 +1,43 @@
-var gm = require('gm')
-var im = require('imagemagick')
 var path = require('path')
 var fs = require('fs-extra')
+var Jimp = require('jimp')
+var im = require('imagemagick')
 var pathDir = './source_img'
 var pathDestinationDir = ('./aligned')
 fs.ensureDirSync(pathDestinationDir)
 
 console.log('Caleb is gonna transform your images')
 
-function sign (x) {
-  return typeof x === 'number' ? x ? x < 0 ? -1 : 1 : x === x ? 0 : NaN : NaN
-}
-
-function calibrateImg(img, size, calib, index) {
-  var imgCalib = calib.computed_transforms[index]
+function calibrateImg(imgPath, calibData, index) {
+  var imgCalib = calibData.computed_transforms[index]
   var imgName = (String(index).length < 2) ? '0'+ index : index
 
   im.convert([
-    img.source,
+    imgPath,
     '-distort',
     'SRT', imgCalib.scale + ',' + -imgCalib.angle,
     '+repage', 
     path.join(pathDestinationDir,'aligned_' + imgName + '.jpg')
   ],
   function (err, stdout) {
-    if (err) throw err
-    var imgCalib = calib.computed_transforms[index]
-    var imgName = (String(index).length < 2) ? '0'+ index : index
     var imgPath = path.join(pathDestinationDir,'aligned_' + imgName + '.jpg')
 
-    gm(imgPath)
-    .gravity('Center')
-    .crop(imgCalib.cropWidth, imgCalib.cropHeight, -imgCalib.offsetX, -imgCalib.offsetY)
-    .crop(calib.global_parameters.min_crop_width, calib.global_parameters.min_crop_height, 0, 0)
-    .write(imgPath, function (err) {
+    Jimp.read(imgPath, function (err, image) {
       if (err) {
-        console.log(err)
-      } else {
-        console.log('Done transforming img: ' + img.source)
+        throw err
       }
+
+      var xPosFirstCrop = (image.bitmap.width - imgCalib.cropWidth - imgCalib.offsetX) / 2
+      var yPosFirstCrop = ((image.bitmap.height - imgCalib.cropHeight) / 2) - imgCalib.offsetY
+
+      var horCenterSecondCrop = Math.round((imgCalib.cropWidth - calibData.global_parameters.min_crop_width) / 2)
+      var vertCenterSecondCrop = (imgCalib.cropHeight - calibData.global_parameters.min_crop_height) / 2
+
+      image
+      .crop( xPosFirstCrop, yPosFirstCrop, imgCalib.cropWidth, imgCalib.cropHeight)
+      .crop(horCenterSecondCrop, vertCenterSecondCrop, calibData.global_parameters.min_crop_width, calibData.global_parameters.min_crop_height)
+      .quality(100)
+      .write(imgPath)
     })
   })
 }
@@ -64,13 +63,9 @@ for (var i = 0; i < alignedImgs.length; i++) {
   fs.unlinkSync('./aligned/'+alignedImgs[i])
 }
 
-for (var i = 0; i < imgPaths.length; i++) {
-  var img = gm(path.join(pathDir, imgPaths[i]))
-  var imgSize = img.size(function (err, value) {
-    if (err) {
-      console.log(err)
-      return
-    }
-    calibrateImg(this.img, value, calibData, this.index)
-  }.bind({ img: img, index: i }))
-}
+// for (var i = 0; i < imgPaths.length; i++) {
+  // calibrateImg(pathDir + '/' + imgPaths[i], calibData, i)
+// }
+
+  calibrateImg(pathDir + '/' + imgPaths[28], calibData, 28)
+  calibrateImg(pathDir + '/' + imgPaths[29], calibData, 29)
