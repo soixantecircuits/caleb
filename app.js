@@ -8,18 +8,30 @@ fs.ensureDirSync(pathDestinationDir)
 
 console.log('Caleb is gonna transform your images')
 
-function calibrateImg(imgPath, calibData, index) {
+function calibrateImg(imgPath, size, calibData, index) {
   var imgCalib = calibData.computed_transforms[index]
   var imgName = (String(index).length < 2) ? '0'+ index : index
 
+  var verticalGravity = (imgCalib.offsetY > 0 ) ? 'north' : 'south'
+  var horizontalGravity = (imgCalib.offsetX > 0 ) ? 'west' : 'east'
+
   im.convert([
     imgPath,
+    '-background', 'white',
+    '-splice',  '0x' + Math.abs(imgCalib.offsetY),
+    '-gravity', horizontalGravity,
+    '-splice', Math.abs(imgCalib.offsetX) + 'x0',
+    '-gravity', verticalGravity + horizontalGravity,
+    '-crop',
+    size.width + 'x' + size.height + '+0+0',
+
     '-distort',
     'SRT', imgCalib.scale + ',' + -imgCalib.angle,
     '+repage', 
     path.join(pathDestinationDir,'aligned_' + imgName + '.jpg')
   ],
   function (err, stdout) {
+
     var imgPath = path.join(pathDestinationDir,'aligned_' + imgName + '.jpg')
 
     Jimp.read(imgPath, function (err, image) {
@@ -27,14 +39,10 @@ function calibrateImg(imgPath, calibData, index) {
         throw err
       }
 
-      var xPosFirstCrop = (image.bitmap.width - imgCalib.cropWidth - imgCalib.offsetX) / 2
-      var yPosFirstCrop = ((image.bitmap.height - imgCalib.cropHeight) / 2) - imgCalib.offsetY
-
-      var horCenterSecondCrop = Math.round((imgCalib.cropWidth - calibData.global_parameters.min_crop_width) / 2)
-      var vertCenterSecondCrop = (imgCalib.cropHeight - calibData.global_parameters.min_crop_height) / 2
+      var horCenterSecondCrop = (image.bitmap.width - calibData.global_parameters.min_crop_width) / 2
+      var vertCenterSecondCrop = (image.bitmap.height - calibData.global_parameters.min_crop_height) / 2
 
       image
-      .crop( xPosFirstCrop, yPosFirstCrop, imgCalib.cropWidth, imgCalib.cropHeight)
       .crop(horCenterSecondCrop, vertCenterSecondCrop, calibData.global_parameters.min_crop_width, calibData.global_parameters.min_crop_height)
       .quality(100)
       .write(imgPath)
@@ -63,9 +71,11 @@ for (var i = 0; i < alignedImgs.length; i++) {
   fs.unlinkSync('./aligned/'+alignedImgs[i])
 }
 
-// for (var i = 0; i < imgPaths.length; i++) {
-  // calibrateImg(pathDir + '/' + imgPaths[i], calibData, i)
-// }
+var size = {
+  height: 1280,
+  width: 1920
+}
 
-  calibrateImg(pathDir + '/' + imgPaths[28], calibData, 28)
-  calibrateImg(pathDir + '/' + imgPaths[29], calibData, 29)
+for (var i = 0; i < imgPaths.length; i++) {
+  calibrateImg(pathDir + '/' + imgPaths[i], size, calibData, i)
+}
