@@ -49,7 +49,13 @@ function calibrateImg(imgPath, size, calibData, index) {
       image
       .crop(horCenterSecondCrop, vertCenterSecondCrop, finalSize.width, finalSize.height)
       .quality(100)
-      .write(imgPath)
+      .write(imgPath, function (err) {
+        if (err) {
+          console.log(err)
+          return
+        }
+        console.log('Done transforming: ' + imgName)
+      })
     })
   })
 }

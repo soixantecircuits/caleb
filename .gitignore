@@ -9,3 +9,6 @@ aligned/
 source_img/
 calibration_data.json
 temp
+
+#transformed gif
+*.gif

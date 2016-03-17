@@ -1,512 +1,520 @@
 {
     "computed_transforms": [
         {
-            "offsetX": 25,
-            "offsetY": 168,
-            "angle": 0.64447021484375,
+            "offsetX": 17,
+            "offsetY": 182,
+            "angle": 356.85504150390627,
             "scale": 1.0,
-            "cropWidth": 1841,
-            "cropHeight": 922
-        },
-        {
-            "offsetX": 10,
-            "offsetY": 174,
-            "angle": 0.857147216796875,
-            "scale": 1.0027778148651124,
-            "cropWidth": 1869,
-            "cropHeight": 909
-        },
-        {
-            "offsetX": 19,
-            "offsetY": 219,
-            "angle": 1.208251953125,
-            "scale": 0.9890410900115967,
-            "cropWidth": 1808,
-            "cropHeight": 785
-        },
-        {
-            "offsetX": 21,
-            "offsetY": 174,
-            "angle": 1.54925537109375,
-            "scale": 0.9836512207984924,
-            "cropWidth": 1780,
-            "cropHeight": 858
-        },
-        {
-            "offsetX": 29,
-            "offsetY": 175,
-            "angle": 1.20220947265625,
-            "scale": 1.0027778148651124,
-            "cropWidth": 1816,
-            "cropHeight": 896
-        },
-        {
-            "offsetX": 19,
-            "offsetY": 180,
-            "angle": 0.866302490234375,
-            "scale": 0.9972375631332398,
-            "cropWidth": 1838,
-            "cropHeight": 888
-        },
-        {
-            "offsetX": 23,
-            "offsetY": 173,
-            "angle": 1.208251953125,
-            "scale": 0.9917582273483276,
-            "cropWidth": 1805,
-            "cropHeight": 882
-        },
-        {
-            "offsetX": 8,
-            "offsetY": 179,
-            "angle": -357.42755126953127,
-            "scale": 1.0,
-            "cropWidth": 1794,
-            "cropHeight": 841
-        },
-        {
-            "offsetX": 14,
-            "offsetY": 181,
-            "angle": -357.6036682128906,
-            "scale": 0.994490385055542,
-            "cropWidth": 1779,
-            "cropHeight": 834
-        },
-        {
-            "offsetX": 10,
-            "offsetY": 172,
-            "angle": -357.42962646484377,
-            "scale": 0.9972375631332398,
-            "cropWidth": 1785,
-            "cropHeight": 852
+            "cropWidth": 1753,
+            "cropHeight": 819
         },
         {
             "offsetX": 2,
-            "offsetY": 174,
-            "angle": -357.25347900390627,
-            "scale": 1.0027778148651124,
-            "cropWidth": 1806,
-            "cropHeight": 852
-        },
-        {
-            "offsetX": -3,
-            "offsetY": 181,
-            "angle": -355.89141845703127,
-            "scale": 1.0027778148651124,
-            "cropWidth": 1750,
-            "cropHeight": 800
-        },
-        {
-            "offsetX": 5,
-            "offsetY": 178,
-            "angle": -357.25347900390627,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1805,
-            "cropHeight": 847
-        },
-        {
-            "offsetX": -3,
-            "offsetY": 175,
-            "angle": -355.3628845214844,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1735,
-            "cropHeight": 802
-        },
-        {
-            "offsetX": -11,
-            "offsetY": 175,
-            "angle": -356.0560607910156,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1746,
-            "cropHeight": 820
-        },
-        {
-            "offsetX": -8,
-            "offsetY": 173,
-            "angle": -355.52679443359377,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1731,
-            "cropHeight": 810
-        },
-        {
-            "offsetX": -12,
-            "offsetY": 177,
-            "angle": -354.8578796386719,
-            "scale": 1.0,
-            "cropWidth": 1687,
-            "cropHeight": 777
-        },
-        {
-            "offsetX": -23,
-            "offsetY": 167,
-            "angle": -355.18243408203127,
-            "scale": 1.0083799362182618,
-            "cropWidth": 1693,
-            "cropHeight": 818
-        },
-        {
-            "offsetX": -19,
-            "offsetY": 174,
-            "angle": -356.0498962402344,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1729,
-            "cropHeight": 822
-        },
-        {
-            "offsetX": -31,
-            "offsetY": 173,
-            "angle": -353.9790344238281,
-            "scale": 1.0083799362182618,
-            "cropWidth": 1633,
-            "cropHeight": 777
-        },
-        {
-            "offsetX": -24,
-            "offsetY": 167,
-            "angle": -355.0103454589844,
-            "scale": 1.0083799362182618,
-            "cropWidth": 1685,
-            "cropHeight": 814
-        },
-        {
-            "offsetX": -25,
-            "offsetY": 170,
-            "angle": -354.5160217285156,
-            "scale": 1.0,
-            "cropWidth": 1648,
-            "cropHeight": 782
-        },
-        {
-            "offsetX": -27,
-            "offsetY": 177,
-            "angle": -354.8772277832031,
-            "scale": 0.9972375631332398,
-            "cropWidth": 1653,
-            "cropHeight": 774
-        },
-        {
-            "offsetX": -25,
-            "offsetY": 163,
-            "angle": -354.9915771484375,
-            "scale": 1.011204481124878,
-            "cropWidth": 1687,
-            "cropHeight": 825
-        },
-        {
-            "offsetX": -45,
-            "offsetY": 159,
-            "angle": -356.3987731933594,
-            "scale": 1.0,
-            "cropWidth": 1679,
-            "cropHeight": 853
-        },
-        {
-            "offsetX": -29,
-            "offsetY": 174,
-            "angle": -355.26800537109377,
-            "scale": 0.9783197641372681,
-            "cropWidth": 1631,
-            "cropHeight": 762
-        },
-        {
-            "offsetX": -37,
-            "offsetY": 164,
-            "angle": -355.3124694824219,
-            "scale": 1.022662878036499,
-            "cropWidth": 1695,
-            "cropHeight": 848
-        },
-        {
-            "offsetX": -29,
-            "offsetY": 166,
-            "angle": -355.8440246582031,
-            "scale": 1.0197739601135255,
-            "cropWidth": 1726,
-            "cropHeight": 855
-        },
-        {
-            "offsetX": -38,
-            "offsetY": 163,
-            "angle": -355.49530029296877,
-            "scale": 1.022662878036499,
-            "cropWidth": 1700,
-            "cropHeight": 855
-        },
-        {
-            "offsetX": -34,
-            "offsetY": 161,
-            "angle": -356.1987609863281,
-            "scale": 1.0169013738632203,
-            "cropWidth": 1725,
-            "cropHeight": 869
-        },
-        {
-            "offsetX": -34,
-            "offsetY": 161,
-            "angle": -356.3620910644531,
-            "scale": 1.0197739601135255,
-            "cropWidth": 1737,
-            "cropHeight": 879
-        },
-        {
-            "offsetX": -33,
-            "offsetY": 157,
-            "angle": -355.6844482421875,
-            "scale": 1.011204481124878,
-            "cropWidth": 1697,
-            "cropHeight": 855
-        },
-        {
-            "offsetX": -26,
-            "offsetY": 160,
-            "angle": -355.50323486328127,
-            "scale": 1.014045000076294,
-            "cropWidth": 1709,
-            "cropHeight": 849
-        },
-        {
-            "offsetX": -26,
-            "offsetY": 163,
-            "angle": -357.4234313964844,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1770,
-            "cropHeight": 882
-        },
-        {
-            "offsetX": -27,
-            "offsetY": 158,
-            "angle": 1.716278076171875,
-            "scale": 0.9917582273483276,
-            "cropWidth": 1776,
-            "cropHeight": 897
-        },
-        {
-            "offsetX": -26,
-            "offsetY": 152,
-            "angle": -354.82843017578127,
-            "scale": 1.0083799362182618,
-            "cropWidth": 1674,
-            "cropHeight": 839
-        },
-        {
-            "offsetX": -23,
-            "offsetY": 156,
-            "angle": -357.06890869140627,
-            "scale": 1.0169013738632203,
-            "cropWidth": 1782,
-            "cropHeight": 903
-        },
-        {
-            "offsetX": -32,
-            "offsetY": 156,
-            "angle": -356.3987731933594,
-            "scale": 1.0,
-            "cropWidth": 1705,
-            "cropHeight": 859
-        },
-        {
-            "offsetX": -19,
-            "offsetY": 160,
-            "angle": -357.9523010253906,
-            "scale": 0.942558765411377,
-            "cropWidth": 1686,
-            "cropHeight": 807
-        },
-        {
-            "offsetX": -18,
-            "offsetY": 148,
-            "angle": -357.94061279296877,
-            "scale": 1.0083799362182618,
-            "cropWidth": 1812,
-            "cropHeight": 933
-        },
-        {
-            "offsetX": -13,
-            "offsetY": 156,
-            "angle": -357.42962646484377,
-            "scale": 1.0,
-            "cropWidth": 1784,
-            "cropHeight": 888
-        },
-        {
-            "offsetX": -2,
-            "offsetY": 157,
-            "angle": -357.941650390625,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1839,
-            "cropHeight": 909
-        },
-        {
-            "offsetX": -7,
-            "offsetY": 148,
-            "angle": -357.7664794921875,
-            "scale": 1.014045000076294,
-            "cropWidth": 1838,
-            "cropHeight": 936
-        },
-        {
-            "offsetX": 15,
-            "offsetY": 159,
-            "angle": 0.166229248046875,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1895,
-            "cropHeight": 965
-        },
-        {
-            "offsetX": -4,
-            "offsetY": 159,
-            "angle": -357.0752258300781,
-            "scale": 1.014045000076294,
-            "cropWidth": 1815,
-            "cropHeight": 894
-        },
-        {
-            "offsetX": -1,
-            "offsetY": 143,
-            "angle": 0.522369384765625,
-            "scale": 0.9972375631332398,
-            "cropWidth": 1889,
-            "cropHeight": 973
-        },
-        {
-            "offsetX": 3,
-            "offsetY": 139,
-            "angle": -1.062713623046875,
-            "scale": 1.011204481124878,
-            "cropWidth": 1890,
-            "cropHeight": 985
-        },
-        {
-            "offsetX": 10,
-            "offsetY": 160,
-            "angle": 1.713714599609375,
-            "scale": 1.0083799362182618,
-            "cropWidth": 1843,
-            "cropHeight": 919
-        },
-        {
-            "offsetX": 20,
-            "offsetY": 142,
-            "angle": 1.7142333984375,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1818,
-            "cropHeight": 950
-        },
-        {
-            "offsetX": 21,
-            "offsetY": 160,
-            "angle": -0.528350830078125,
-            "scale": 1.0055710077285767,
-            "cropWidth": 1867,
-            "cropHeight": 951
-        },
-        {
-            "offsetX": 27,
-            "offsetY": 164,
-            "angle": -1.690032958984375,
-            "scale": 0.994490385055542,
-            "cropWidth": 1782,
+            "offsetY": 176,
+            "angle": 0.507171630859375,
+            "scale": 0.98740553855896,
+            "cropWidth": 1869,
             "cropHeight": 891
         },
         {
-            "offsetX": 10,
-            "offsetY": 158,
-            "angle": -357.25860595703127,
-            "scale": 0.9972375631332398,
-            "cropWidth": 1778,
-            "cropHeight": 875
+            "offsetX": -1,
+            "offsetY": 173,
+            "angle": 1.42816162109375,
+            "scale": 0.9949238300323486,
+            "cropWidth": 1846,
+            "cropHeight": 881
         },
         {
-            "offsetX": 29,
-            "offsetY": 162,
-            "angle": 0.35650634765625,
-            "scale": 0.9917582273483276,
-            "cropWidth": 1830,
-            "cropHeight": 931
+            "offsetX": 13,
+            "offsetY": 185,
+            "angle": 1.029449462890625,
+            "scale": 0.9631449580192566,
+            "cropWidth": 1779,
+            "cropHeight": 816
+        },
+        {
+            "offsetX": 17,
+            "offsetY": 186,
+            "angle": 0.978057861328125,
+            "scale": 0.9849246144294739,
+            "cropWidth": 1814,
+            "cropHeight": 853
+        },
+        {
+            "offsetX": 16,
+            "offsetY": 194,
+            "angle": 0.542388916015625,
+            "scale": 0.9775561094284058,
+            "cropWidth": 1821,
+            "cropHeight": 837
+        },
+        {
+            "offsetX": 10,
+            "offsetY": 198,
+            "angle": 1.932525634765625,
+            "scale": 0.9655172228813171,
+            "cropWidth": 1753,
+            "cropHeight": 766
+        },
+        {
+            "offsetX": 12,
+            "offsetY": 192,
+            "angle": 0.675506591796875,
+            "scale": 0.9824561476707459,
+            "cropWidth": 1833,
+            "cropHeight": 845
         },
         {
             "offsetX": 20,
-            "offsetY": 203,
-            "angle": -0.339111328125,
-            "scale": 0.8677884340286255,
-            "cropWidth": 1607,
-            "cropHeight": 635
+            "offsetY": 201,
+            "angle": 1.805816650390625,
+            "scale": 0.9514563083648682,
+            "cropWidth": 1710,
+            "cropHeight": 741
         },
         {
-            "offsetX": 27,
-            "offsetY": 152,
-            "angle": -1.85986328125,
-            "scale": 0.9972375631332398,
-            "cropWidth": 1780,
-            "cropHeight": 913
-        },
-        {
-            "offsetX": 35,
-            "offsetY": 164,
-            "angle": -2.3438720703125,
-            "scale": 0.9917582273483276,
-            "cropWidth": 1734,
-            "cropHeight": 866
-        },
-        {
-            "offsetX": 27,
-            "offsetY": 155,
-            "angle": -1.679443359375,
-            "scale": 0.9917582273483276,
-            "cropWidth": 1778,
-            "cropHeight": 904
-        },
-        {
-            "offsetX": 25,
-            "offsetY": 163,
-            "angle": -0.81591796875,
-            "scale": 0.9863387942314148,
-            "cropWidth": 1808,
-            "cropHeight": 906
+            "offsetX": 11,
+            "offsetY": 204,
+            "angle": 0.9195556640625,
+            "scale": 0.9468598961830139,
+            "cropWidth": 1757,
+            "cropHeight": 753
         },
         {
             "offsetX": 10,
-            "offsetY": 165,
-            "angle": -0.322845458984375,
-            "scale": 0.9917582273483276,
-            "cropWidth": 1869,
-            "cropHeight": 926
+            "offsetY": 188,
+            "angle": 1.621490478515625,
+            "scale": 0.9727047085762024,
+            "cropWidth": 1779,
+            "cropHeight": 808
         },
         {
-            "offsetX": 24,
+            "offsetX": 14,
+            "offsetY": 194,
+            "angle": 2.06982421875,
+            "scale": 0.9775561094284058,
+            "cropWidth": 1762,
+            "cropHeight": 791
+        },
+        {
+            "offsetX": 10,
+            "offsetY": 192,
+            "angle": 1.922821044921875,
+            "scale": 0.9727047085762024,
+            "cropWidth": 1767,
+            "cropHeight": 791
+        },
+        {
+            "offsetX": 0,
+            "offsetY": 202,
+            "angle": 1.922821044921875,
+            "scale": 0.9727047085762024,
+            "cropWidth": 1787,
+            "cropHeight": 771
+        },
+        {
+            "offsetX": 10,
+            "offsetY": 185,
+            "angle": 2.67913818359375,
+            "scale": 0.9974554777145386,
+            "cropWidth": 1781,
+            "cropHeight": 823
+        },
+        {
+            "offsetX": -1,
+            "offsetY": 183,
+            "angle": -356.7005920410156,
+            "scale": 0.9849246144294739,
+            "cropWidth": 1752,
+            "cropHeight": 791
+        },
+        {
+            "offsetX": 2,
+            "offsetY": 191,
+            "angle": 2.83355712890625,
+            "scale": 0.98740553855896,
+            "cropWidth": 1773,
+            "cropHeight": 791
+        },
+        {
+            "offsetX": -4,
+            "offsetY": 190,
+            "angle": -356.85504150390627,
+            "scale": 0.9849246144294739,
+            "cropWidth": 1752,
+            "cropHeight": 781
+        },
+        {
+            "offsetX": -7,
+            "offsetY": 192,
+            "angle": 2.83441162109375,
+            "scale": 0.9974554777145386,
+            "cropWidth": 1781,
+            "cropHeight": 805
+        },
+        {
+            "offsetX": 0,
+            "offsetY": 176,
+            "angle": -356.53936767578127,
+            "scale": 1.0288714170455933,
+            "cropWidth": 1826,
+            "cropHeight": 866
+        },
+        {
+            "offsetX": -7,
+            "offsetY": 192,
+            "angle": -355.306884765625,
+            "scale": 0.98740553855896,
+            "cropWidth": 1692,
+            "cropHeight": 740
+        },
+        {
+            "offsetX": -9,
+            "offsetY": 183,
+            "angle": -356.0870361328125,
+            "scale": 0.9775561094284058,
+            "cropWidth": 1700,
+            "cropHeight": 762
+        },
+        {
+            "offsetX": 0,
+            "offsetY": 185,
+            "angle": -356.2039794921875,
+            "scale": 1.0594594478607178,
+            "cropWidth": 1866,
+            "cropHeight": 887
+        },
+        {
+            "offsetX": -4,
+            "offsetY": 192,
+            "angle": -355.5677185058594,
+            "scale": 1.0234986543655396,
+            "cropWidth": 1772,
+            "cropHeight": 802
+        },
+        {
+            "offsetX": -2,
+            "offsetY": 195,
+            "angle": -355.7884826660156,
+            "scale": 0.9751243591308594,
+            "cropWidth": 1698,
+            "cropHeight": 728
+        },
+        {
+            "offsetX": -21,
+            "offsetY": 180,
+            "angle": -355.2184753417969,
+            "scale": 1.0594594478607178,
+            "cropWidth": 1789,
+            "cropHeight": 870
+        },
+        {
+            "offsetX": -10,
+            "offsetY": 190,
+            "angle": -355.13824462890627,
+            "scale": 0.9949238300323486,
+            "cropWidth": 1692,
+            "cropHeight": 752
+        },
+        {
+            "offsetX": -20,
+            "offsetY": 199,
+            "angle": -355.0752258300781,
+            "scale": 1.0288714170455933,
+            "cropWidth": 1730,
+            "cropHeight": 783
+        },
+        {
+            "offsetX": -13,
+            "offsetY": 193,
+            "angle": -354.1589050292969,
+            "scale": 1.0077121257781983,
+            "cropWidth": 1674,
+            "cropHeight": 740
+        },
+        {
+            "offsetX": -5,
+            "offsetY": 194,
+            "angle": -354.60931396484377,
+            "scale": 1.026178002357483,
+            "cropWidth": 1738,
+            "cropHeight": 776
+        },
+        {
+            "offsetX": -9,
+            "offsetY": 193,
+            "angle": -354.1589050292969,
+            "scale": 1.015544056892395,
+            "cropWidth": 1695,
+            "cropHeight": 751
+        },
+        {
+            "offsetX": -10,
+            "offsetY": 194,
+            "angle": -354.30316162109377,
+            "scale": 1.0181818008422852,
+            "cropWidth": 1703,
+            "cropHeight": 757
+        },
+        {
+            "offsetX": -9,
+            "offsetY": 194,
+            "angle": -353.9109802246094,
+            "scale": 1.042553186416626,
+            "cropWidth": 1732,
+            "cropHeight": 783
+        },
+        {
+            "offsetX": -10,
+            "offsetY": 198,
+            "angle": -354.75189208984377,
+            "scale": 1.0343008041381837,
+            "cropWidth": 1747,
+            "cropHeight": 785
+        },
+        {
+            "offsetX": -5,
+            "offsetY": 199,
+            "angle": -354.6402893066406,
+            "scale": 1.0077121257781983,
+            "cropWidth": 1708,
+            "cropHeight": 740
+        },
+        {
+            "offsetX": -8,
+            "offsetY": 187,
+            "angle": -354.2744445800781,
+            "scale": 1.0288714170455933,
+            "cropWidth": 1724,
+            "cropHeight": 787
+        },
+        {
+            "offsetX": -10,
+            "offsetY": 201,
+            "angle": -355.4229431152344,
+            "scale": 1.0103092193603516,
+            "cropWidth": 1732,
+            "cropHeight": 761
+        },
+        {
+            "offsetX": -2,
+            "offsetY": 182,
+            "angle": -354.7459411621094,
+            "scale": 1.0315788984298707,
+            "cropWidth": 1759,
+            "cropHeight": 812
+        },
+        {
+            "offsetX": 10,
+            "offsetY": 197,
+            "angle": -355.545654296875,
+            "scale": 1.042553186416626,
+            "cropWidth": 1792,
+            "cropHeight": 821
+        },
+        {
+            "offsetX": -16,
+            "offsetY": 199,
+            "angle": -354.93524169921877,
+            "scale": 1.0208333730697632,
+            "cropWidth": 1719,
+            "cropHeight": 768
+        },
+        {
+            "offsetX": -4,
+            "offsetY": 197,
+            "angle": -355.398681640625,
+            "scale": 1.0315788984298707,
+            "cropWidth": 1780,
+            "cropHeight": 800
+        },
+        {
+            "offsetX": 1,
+            "offsetY": 198,
+            "angle": -355.3650207519531,
+            "scale": 1.0537633895874024,
+            "cropWidth": 1823,
+            "cropHeight": 831
+        },
+        {
+            "offsetX": -10,
+            "offsetY": 203,
+            "angle": -355.19476318359377,
+            "scale": 1.0566037893295289,
+            "cropWidth": 1803,
+            "cropHeight": 820
+        },
+        {
+            "offsetX": -5,
+            "offsetY": 195,
+            "angle": -356.3681335449219,
+            "scale": 1.0343008041381837,
+            "cropWidth": 1821,
+            "cropHeight": 834
+        },
+        {
+            "offsetX": -11,
+            "offsetY": 197,
+            "angle": -355.3607177734375,
+            "scale": 1.0537633895874024,
+            "cropWidth": 1802,
+            "cropHeight": 833
+        },
+        {
+            "offsetX": -18,
+            "offsetY": 199,
+            "angle": -354.6908264160156,
+            "scale": 1.0566037893295289,
+            "cropWidth": 1767,
+            "cropHeight": 814
+        },
+        {
+            "offsetX": -9,
+            "offsetY": 198,
+            "angle": -355.4068603515625,
+            "scale": 1.026178002357483,
+            "cropWidth": 1761,
+            "cropHeight": 790
+        },
+        {
+            "offsetX": -5,
+            "offsetY": 206,
+            "angle": -356.6875,
+            "scale": 1.06521737575531,
+            "cropWidth": 1889,
+            "cropHeight": 869
+        },
+        {
+            "offsetX": -5,
+            "offsetY": 200,
+            "angle": 2.342559814453125,
+            "scale": 1.0234986543655396,
+            "cropWidth": 1854,
+            "cropHeight": 844
+        },
+        {
+            "offsetX": 3,
+            "offsetY": 185,
+            "angle": -356.0412292480469,
+            "scale": 1.0370370149612427,
+            "cropWidth": 1816,
+            "cropHeight": 848
+        },
+        {
+            "offsetX": 4,
+            "offsetY": 186,
+            "angle": -356.0389099121094,
+            "scale": 1.0343008041381837,
+            "cropWidth": 1809,
+            "cropHeight": 843
+        },
+        {
+            "offsetX": -16,
+            "offsetY": 192,
+            "angle": -356.85504150390627,
+            "scale": 1.0453333854675294,
+            "cropWidth": 1838,
+            "cropHeight": 871
+        },
+        {
+            "offsetX": -3,
+            "offsetY": 198,
+            "angle": 2.9788818359375,
+            "scale": 1.0594594478607178,
+            "cropWidth": 1896,
+            "cropHeight": 887
+        },
+        {
+            "offsetX": -19,
+            "offsetY": 197,
+            "angle": 2.008941650390625,
+            "scale": 1.0315788984298707,
+            "cropWidth": 1855,
+            "cropHeight": 874
+        },
+        {
+            "offsetX": 16,
             "offsetY": 164,
-            "angle": -0.485565185546875,
-            "scale": 0.9890410900115967,
-            "cropWidth": 1829,
-            "cropHeight": 920
+            "angle": 2.245086669921875,
+            "scale": 0.9537712931632996,
+            "cropWidth": 1707,
+            "cropHeight": 811
         },
         {
-            "offsetX": 31,
-            "offsetY": 163,
-            "angle": -0.82391357421875,
-            "scale": 0.9890410900115967,
-            "cropWidth": 1801,
-            "cropHeight": 911
+            "offsetX": -1,
+            "offsetY": 195,
+            "angle": 2.1514892578125,
+            "scale": 1.0537633895874024,
+            "cropWidth": 1920,
+            "cropHeight": 907
         },
         {
-            "offsetX": 29,
-            "offsetY": 166,
-            "angle": -0.15911865234375,
-            "scale": 0.9972375631332398,
-            "cropWidth": 1849,
-            "cropHeight": 939
+            "offsetX": 4,
+            "offsetY": 194,
+            "angle": 2.1600341796875,
+            "scale": 1.0453333854675294,
+            "cropWidth": 1904,
+            "cropHeight": 896
         },
         {
-            "offsetX": 46,
-            "offsetY": 158,
-            "angle": -0.677490234375,
-            "scale": 1.0027778148651124,
-            "cropWidth": 1805,
-            "cropHeight": 947
+            "offsetX": 7,
+            "offsetY": 193,
+            "angle": 2.01531982421875,
+            "scale": 1.026178002357483,
+            "cropWidth": 1869,
+            "cropHeight": 872
+        },
+        {
+            "offsetX": 1,
+            "offsetY": 194,
+            "angle": 1.203460693359375,
+            "scale": 1.0288714170455933,
+            "cropWidth": 1920,
+            "cropHeight": 900
+        },
+        {
+            "offsetX": 19,
+            "offsetY": 189,
+            "angle": 0.73223876953125,
+            "scale": 1.0234986543655396,
+            "cropWidth": 1896,
+            "cropHeight": 917
+        },
+        {
+            "offsetX": 14,
+            "offsetY": 185,
+            "angle": 1.071075439453125,
+            "scale": 1.015544056892395,
+            "cropWidth": 1876,
+            "cropHeight": 900
+        },
+        {
+            "offsetX": 11,
+            "offsetY": 190,
+            "angle": 0.57879638671875,
+            "scale": 1.0208333730697632,
+            "cropWidth": 1913,
+            "cropHeight": 915
+        },
+        {
+            "offsetX": -1,
+            "offsetY": 193,
+            "angle": 0.738983154296875,
+            "scale": 1.0234986543655396,
+            "cropWidth": 1920,
+            "cropHeight": 909
+        },
+        {
+            "offsetX": 9,
+            "offsetY": 187,
+            "angle": 1.071075439453125,
+            "scale": 1.015544056892395,
+            "cropWidth": 1886,
+            "cropHeight": 896
         }
     ],
     "global_parameters": {
-        "min_crop_width": 1607,
-        "min_crop_height": 635
+        "min_crop_width": 1674,
+        "min_crop_height": 728
     }
 }
