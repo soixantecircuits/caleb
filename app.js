@@ -41,12 +41,10 @@ function calibrateImg(imgPath, size, calibData, index) {
   function (err, stdout) {
     if (err) {
       throw err
-      return
     }
     console.log('Done transforming: ' + imgName)
   })
 }
-
 
 // Setup 
 try {
@@ -68,11 +66,11 @@ for (var i = 0; i < alignedImgs.length; i++) {
   fs.unlinkSync('./aligned/'+alignedImgs[i])
 }
 
-var size = {
-  height: 1280,
-  width: 1920
-}
-
 for (var i = 0; i < imgPaths.length; i++) {
-  calibrateImg(pathDir + '/' + imgPaths[i], size, calibData, i)
+  im.identify(pathDir + '/' + imgPaths[i], function (err, features) {
+    if (err) {
+      throw err
+    }
+    calibrateImg(pathDir + '/' + imgPaths[this.i], features, calibData, this.i)
+  }.bind({i: i}))
 }
