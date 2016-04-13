@@ -1,6 +1,5 @@
 var path = require('path')
 var fs = require('fs-extra')
-var Jimp = require('jimp')
 var im = require('imagemagick')
 var pathDir = './source_img'
 var pathDestinationDir = ('./aligned')
@@ -15,6 +14,13 @@ function calibrateImg(imgPath, size, calibData, index) {
   var verticalGravity = (imgCalib.offsetY > 0 ) ? 'north' : 'south'
   var horizontalGravity = (imgCalib.offsetX > 0 ) ? 'west' : 'east'
 
+  var finalSize = {}
+  finalSize.height = (calibData.global_parameters.min_crop_height % 2 === 0) ? calibData.global_parameters.min_crop_height : (calibData.global_parameters.min_crop_height + 1) 
+  finalSize.width = (calibData.global_parameters.min_crop_width % 2 === 0) ? calibData.global_parameters.min_crop_width : (calibData.global_parameters.min_crop_width + 1) 
+  var horCenterSecondCrop = (size.width - calibData.global_parameters.min_crop_width) / 2
+  var vertCenterSecondCrop = (size.height - calibData.global_parameters.min_crop_height) / 2
+
+
   im.convert([
     imgPath,
     '-background', 'white',
@@ -24,39 +30,20 @@ function calibrateImg(imgPath, size, calibData, index) {
     '-gravity', verticalGravity + horizontalGravity,
     '-crop',
     size.width + 'x' + size.height + '+0+0',
-
     '-distort',
     'SRT', imgCalib.scale + ',' + -imgCalib.angle,
+    '-gravity', 'NorthWest',
+    '-crop',
+    finalSize.width + 'x' + finalSize.height + '+' + horCenterSecondCrop + '+' + vertCenterSecondCrop,
     '+repage', 
     path.join(pathDestinationDir,'aligned_' + imgName + '.jpg')
   ],
   function (err, stdout) {
-
-    var imgPath = path.join(pathDestinationDir,'aligned_' + imgName + '.jpg')
-
-    Jimp.read(imgPath, function (err, image) {
-      if (err) {
-        throw err
-      }
-
-      var horCenterSecondCrop = (image.bitmap.width - calibData.global_parameters.min_crop_width) / 2
-      var vertCenterSecondCrop = (image.bitmap.height - calibData.global_parameters.min_crop_height) / 2
-
-      var finalSize = {}
-      finalSize.height = (calibData.global_parameters.min_crop_height % 2 === 0) ? calibData.global_parameters.min_crop_height : (calibData.global_parameters.min_crop_height + 1) 
-      finalSize.width = (calibData.global_parameters.min_crop_width % 2 === 0) ? calibData.global_parameters.min_crop_width : (calibData.global_parameters.min_crop_width + 1) 
-
-      image
-      .crop(horCenterSecondCrop, vertCenterSecondCrop, finalSize.width, finalSize.height)
-      .quality(100)
-      .write(imgPath, function (err) {
-        if (err) {
-          console.log(err)
-          return
-        }
-        console.log('Done transforming: ' + imgName)
-      })
-    })
+    if (err) {
+      throw err
+      return
+    }
+    console.log('Done transforming: ' + imgName)
   })
 }
 
