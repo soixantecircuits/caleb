@@ -24,6 +24,7 @@ function calibrateImg(imgPath, size, calibData, index) {
   im.convert([
     imgPath,
     '-background', 'white',
+    '-gravity', verticalGravity,
     '-splice',  '0x' + Math.abs(imgCalib.offsetY),
     '-gravity', horizontalGravity,
     '-splice', Math.abs(imgCalib.offsetX) + 'x0',
@@ -32,9 +33,9 @@ function calibrateImg(imgPath, size, calibData, index) {
     size.width + 'x' + size.height + '+0+0',
     '-distort',
     'SRT', imgCalib.scale + ',' + -imgCalib.angle,
-    '-gravity', 'NorthWest',
+    '-gravity', 'Center',
     '-crop',
-    finalSize.width + 'x' + finalSize.height + '+' + horCenterSecondCrop + '+' + vertCenterSecondCrop,
+    finalSize.width + 'x' + finalSize.height + '+0+0',
     '+repage', 
     path.join(pathDestinationDir,'aligned_' + imgName + '.jpg')
   ],
